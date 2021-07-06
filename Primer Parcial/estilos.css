@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Redressed";
+    src:url(fonts/Redressed-Regular.ttf);
+}
+
+h1{
+    text-align: center;
+    font-family: "Redressed";
+    font-size: 70px;
+}
+
+#UASLP{
+    display: inline-block;
+    width: 150px;
+    float: right;
+}
+
+.elementos{
+    display:inline-block;
+}
+
+.parrafo{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #971414;
+}
+
