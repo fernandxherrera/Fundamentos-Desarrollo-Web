@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Blitter-Italic-Variable";
+    src:url(fonts/Bitter-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Lora-Italic-Font";
+    src:url(fonts/Lora-Italic-VariableFont_wght.ttf);
+}
+
+#logoUASLP{
+    height: 160px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+#logoING{
+    height: 160px;
+    width: 130px;
+    margin-top: 10px;
+    float: right;
+}
+
+h2{
+    text-align: center;
+    font-family: "Blitter-Italic-Variable";
+}
+
+h4{
+    text-align: center;
+    font-family: "Blitter-Italic-Variable";
+}
+
+#div1{
+    height: 30px;
+    background-color:darkcyan;
+    text-align: right;
+    position: relative;
+}
+
+#texto, #tablas, #imagenes{
+    display: inline;
+    line-height: 30px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid white;
+    margin-right: 0.5mm;
+    color: white;
+    text-decoration: none;
+}
+
+b{
+    display: block;
+    border-bottom: 1px solid black;
+    padding: 10px 0px 10px 0px;
+    font-family: "Lora-Italic-Font";
+}
+
+p{
+    text-align: justify;
+    padding-right: 5px;
+    letter-spacing: 1px;
+}
+
+table{
+    display: block;
+    width: auto;
+    margin: 10px 0px 10px 0px;
+    border-collapse: collapse;
+    font-family: "Lora-Italic-Font";
+}
+
+th, td{
+    width: 25%;
+    text-align: center;
+    font-family: "Lora-Italic-Font";
+    border: 1px solid black;
+ }
+
+ #link{
+    width: 250px;
+    text-align: center;
+    display: block;
+    background-color:darkcyan;
+    color: white;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    font-family: "Blitter-Italic-Variable";
+ }
+
+ #frameImages{
+    height: 400px;
+    width: 650px;
+    margin-top: 10px;
+ }
