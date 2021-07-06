@@ -1,0 +1,63 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.tweet{
+    display: flex;
+    padding: 0.5em 1em;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.tweet-image{
+    width: 15%;
+    padding: 0.25em;
+}
+
+.tweet-content{
+    width: 85%;
+    padding: 0.25em 0.5em;
+}
+
+.justify-content-btw{
+    justify-content: space-between;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-right{
+    text-align: right;
+}
+
+textarea{
+    width: 50%;
+    height: 100px;
+
+}
+
+.form-error{
+    border: 1px solid red;
+}

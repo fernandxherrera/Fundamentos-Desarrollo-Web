@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Twitter</title>
+</head>
+<body class="container flex">
+
+    <div class="w-50">
+        <h5>Escribir Publicación</h5>
+        <div id="form-message"></div>
+        <form id="tweet-form">
+            <textarea name="text" id="text"></textarea>
+            <br>
+            <button onclick="setTweet()" type="submit">Publicar</button>
+        </form>
+    </div>
+
+    <div class="w-50">
+        <h1>Publicaciones Recientes</h1>
+
+        <div id="tweets"></div>
+
+         <!-- <div class="tweet">
+            <div class="tweet-image">
+                <img class="img-fluid" src="https://picsum.photos/200/" alt="">
+            </div>
+            <div class="tweet-content">
+                <div class="flex justify-content-btw">
+                    <div>
+                        Fernando Herrera
+                    </div>
+    
+                    <div>
+                        29/06/2021 21:00
+                    </div>
+                </div>
+
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quasi, ab harum sit tenetur labore aperiam dolorem mollitia rem consequuntur.
+                </p>
+
+                <div class="text-right">
+                    <button>X</button>
+                </div>
+            </div>
+
+        </div> -->
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
