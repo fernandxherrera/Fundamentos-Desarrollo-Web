@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+
+    <h1>Prueba AJAX</h1>
+    <button onclick="readDoc()">Iniciar Petición</button>
+
+    <div id="respuesta"></div>
+    <br><br>
+
+    <h1>Prueba AJAX Picsum</h1>
+    <button onclick="loadImage()">Cargar Imágen</button>
+    
+    <div id="imagen"></div>
+
+    <script>
+
+        function readDoc(){
+            //Declaracion de la variable para AJAX
+            var xttp = new XMLHttpRequest();
+
+            //Definimos las propiedades de la conexión 
+            xttp.open("GET", "prueba_ajax.txt", false);
+
+            //Definimos la función callBack
+            /*xttp.onreadystatechange = function(){
+                //Verificamos que la petición haya terminado
+                if(this.readyState == 4){
+                    //Verificamos que la respuesta sea correcta
+                    if(this.status == 200){
+                        //Leer la respuesta
+                        document.getElementById("respuesta").innerHTML = this.responseText;
+                    }
+                    else{
+                        alert("Error en la petición");
+                    }
+                }
+            };*/
+
+            //Se envía la petición
+            xttp.send();
+            if(xttp.status == 200){
+                //Leer la respuesta
+                document.getElementById("respuesta").innerHTML = xttp.responseText;
+            }
+            else{
+                alert("Error en la petición");
+            }
+        }
+
+        function loadImage(){
+            //Declaracion de la variable para AJAX
+            var xttp = new XMLHttpRequest();
+
+            //Definimos las propiedades de la conexión 
+            xttp.open("GET", "https://picsum.photos/id/0/info", true);
+
+            //Definimos la función callBack
+            xttp.onreadystatechange = function(){
+                //Verificamos que la petición haya terminado
+                if(this.readyState == 4){
+                    //Verificamos que la respuesta sea correcta
+                    if(this.status == 200){
+                        //Leer la respuesta
+                        var json = JSON.parse(this.responseText);
+
+                        document.getElementById("imagen").innerHTML = 
+                            `<a href="${json.url}" target="_blank">
+                                <img src="${json.download_url}" width="300px">
+                            </a>
+                            <br>
+                            <h3>${json.author}</h3>`;
+                    }
+                    else{
+                        alert("Error en la petición");
+                    }
+                }
+            };
+
+            //Se envía la petición
+            xttp.send();
+        }
+    </script>
+    
+</body>
+</html>
