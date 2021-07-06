@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <style>
+        .aux{
+            color: red;
+            text-align: justify;
+            padding: 10px;
+            border: blue solid;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hola mundo</h1>
+
+    <div id="section">
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias ad, nemo similique est accusamus eligendi modi pariatur quia fugiat blanditiis non velit dolores labore! Reiciendis expedita repellendus debitis veritatis.</p>
+    </div>
+
+    <img src="images/uaslp.jpg" alt="UASLP">
+    <img alt="Ingenieria">
+
+    <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, praesentium omnis, iste recusandae voluptatem pariatur laudantium deleniti cupiditate cum dicta maxime voluptates animi facilis aliquid necessitatibus soluta! Soluta, distinctio voluptatem!</p>
+
+    <p id="nuevo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illum aliquam perferendis qui adipisci ab aut, iste fuga excepturi eum corporis dolorem quas voluptatibus, minus consequuntur laboriosam veritatis, id dignissimos!</p>
+
+    <script>
+        var section = document.getElementById("section");
+        console.log(section.innerHTML);
+        console.log(section.innerText);
+
+        //section.style.textAlign = "center";
+        //section.style.color = "red";
+
+        section.className = "aux";
+
+        var img = document.querySelectorAll("img");
+        console.log(img[0].src);
+        console.log(img[0].alt);
+
+        img[1].setAttribute("src", "ingenieria.jpg");
+        //console.log(img[1]);
+
+        var nuevo = document.getElementById("nuevo");
+        nuevo.innerHTML = "<b>Hola</b>";
+        //console.log(nuevo);
+
+        //img[1].remove();
+
+    </script>
+
+    <script>
+        var w = "W";
+
+        var html = 
+            `<ul>
+                <li> Elemento ${w} </li>
+                <li> Elemento X </li> 
+                <li> Elemento Y </li> 
+            </ul>`; 
+
+            document.body.innerHTML = document.body.innerHTML + html;
+    </script>
+
+    <!-- <script>
+        var lista = document.createElement("ul");
+
+        var elemento_x= document.createElement("li");
+        lista.appendChild(elemento_x);
+        var texto = document.createTextNode("Elemento X");
+        elemento_x.appendChild(texto);
+
+
+        var elemento_y= document.createElement("li");
+        lista.appendChild(elemento_y);
+        var texto = document.createTextNode("Elemento Y");
+        elemento_y.appendChild(texto);
+
+        var elemento_w= document.createElement("li");
+        //lista.appendChild(elemento_w);
+        var texto = document.createTextNode("Elemento W");
+        elemento_w.appendChild(texto);
+        lista.insertBefore(elemento_w, elemento_x);
+
+        var parrafito = document.getElementById("nuevo");
+
+        document.body.insertBefore(lista, parrafito);
+ 
+
+        console.log(lista);
+    </script> -->
+
+    <!-- <script src="app.js"></script> -->
+    
+    <!-- <script>
+        var x = 1;
+        document.write(x);
+        //alert(x);
+        console.log(x);
+    </script> -->
+    
+</body>
+</html>

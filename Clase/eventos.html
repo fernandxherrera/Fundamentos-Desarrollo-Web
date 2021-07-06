@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+</head>
+<body>
+
+    <button onclick="Saluda()" type="submit">Enviar</button>
+
+    <p id="1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem soluta rem fugiat unde natus consequatur quo ullam repellat laboriosam quos dicta doloremque vero, a, consequuntur eum veritatis maiores at obcaecati!
+    </p>
+
+    <p id="2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod autem libero eius ipsam quia maiores eos aliquid! Quod illum, possimus, odio maxime incidunt sed corporis sunt quisquam, soluta nihil sequi.
+    </p>
+
+    <div id="aux"></div>
+
+    <form action="" id="formulario">
+        <label for="user">Nombre de Usuario</label>
+        <input type="text" name="user">
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass">
+        <br>
+        <input type="submit" value="Iniciar sesión">
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded",Saluda);
+        document.addEventListener("DOMContentLoaded",Imprime);
+
+        function Saluda(){
+            console.log("Hola, mundo!");
+        }
+
+        function Imprime(){
+            //document.write("Hola, mundo!");
+        }
+
+        function sobreElemento(e){
+            console.log("Sobre el elemento " + e.target.id);
+        }
+
+        var p = document.getElementsByTagName("p");
+        for(var i = 0; i < p.length; i++)
+        {
+            p[i].addEventListener("mouseover", sobreElemento);
+        }
+
+        var aux = document.getElementById("aux");
+        aux.innerHTML = "<p onmouseover='sobreElemento()'> Este es un nuevo parrafo </p>";
+
+
+        var form = document.getElementById("formulario");
+        form.addEventListener("submit", revisaFormulario);
+
+        function revisaFormulario(e){
+            e.preventDefault();
+            e.stopPropagation();
+            console.log("Enviando formulario...");
+        }
+
+    </script>
+    
+</body>
+</html>

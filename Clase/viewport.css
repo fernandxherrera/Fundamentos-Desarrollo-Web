@@ -1,0 +1,44 @@
+html{
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+@media (min-width: 0px)
+{
+    p{
+        color: red;
+    }
+
+    li{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px)
+{
+    p{
+        color: blue;
+    }
+
+    li{
+        display: list-item;
+    }
+}
+
+div{
+    font-size: 20px;
+    width: 75%;
+    border: solid 1px black;
+    margin: 0px auto;
+}
+
+p{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 10vw;
+}

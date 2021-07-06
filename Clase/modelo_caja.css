@@ -1,0 +1,14 @@
+p{
+    text-align: justify;
+    border: 6px;
+    border-style: dashed;
+    border-color:darkgreen;
+    padding: 5px 10px;
+    margin-left: 16px;
+    border-top: 0px;
+}
+
+img{
+    margin-top: 50px;
+    margin-right: 20px;
+}

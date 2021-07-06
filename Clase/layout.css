@@ -1,0 +1,103 @@
+*{ box-sizing: border-box; }
+
+.border { border: solid 1px black; }
+
+.flex{ display: flex; }
+.flex-row{ flex-direction: row; }
+.flex-column{ flex-direction: column; }
+
+.w-25{ width: 25%; }
+.w-50{ width: 50%; }
+.w-75{ width: 75%; }
+.w-100{ width: 100%; }
+
+.text-center{ text-align: center; }
+.text-right{ text-align: right; }
+.text-left{ text-align: left; }
+
+.img-fluid { max-width: 100%; height: auto; }
+
+.table{ width: 100%; border-collapse: collapse; }
+
+.table > thead th{ 
+    border: solid black;
+    border-width: 2px 0px;
+}
+
+.table td{ 
+    border-top: solid darkgray;
+    border-width: 1px 0px;
+}
+
+.table th, .table td{ padding: 0.5em 0.25em; }
+
+.table-responsive { width: 100%; overflow-x: auto; }
+
+.scroll-y{ height: 50px; overflow-y: auto; }
+
+.btn { 
+    border: solid 1px; 
+    border-radius: 0.25em; 
+    padding: 0.4em;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-primary{
+    background-color: darkred; 
+    border-color: darkred;
+    color: white; 
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: white; 
+    color: darkred;
+}
+
+.btn-secundary{
+    background-color: teal;
+    border-color: teal;
+    color: white;
+}
+
+.btn-secundary:hover{
+    cursor: pointer;
+    background-color: white; 
+    color: teal;
+}
+
+@media (min-width: 0px){
+    .d-sm-inline-block{ display: inline-block; }
+    .d-sm-block { display: block; }
+
+    .text-sm-center{ text-align: center; }
+    .text-sm-right{ text-align: right; }
+    .text-sm-left{ text-align: left; }
+
+    .flex-sm-row{ flex-direction: row; }
+    .flex-sm-column{ flex-direction: column; } 
+
+    .w-sm-25{ width: 25%; }
+    .w-sm-50{ width: 50%; }
+    .w-sm-75{ width: 75%; }
+    .w-sm-100{ width: 100%; }
+}
+
+@media (min-width: 768px){
+    .d-md-inline-block{ display: inline-block; }
+    .d-md-block { display: block; }
+
+    .text-md-center{ text-align: center; }
+    .text-md-right{ text-align: right; }
+    .text-md-left{ text-align: left; }
+
+    .flex-md-row{ flex-direction: row; }
+    .flex-md-column{ flex-direction: column; }
+
+    .w-md-25{ width: 25%; }
+    .w-md-50{ width: 50%; }
+    .w-md-75{ width: 75%; }
+    .w-md-100{ width: 100%; }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+    <style>
+        .card{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="cards">
+
+    </div>
+
+    <!-- <div class="card">
+        <img src="https://picsum.photos/200" alt="">
+        <h3>Fernando Herrera</h3>
+        <h5>24 años</h5>
+    </div> -->
+    
+    <!-- <script>
+
+        var car = {
+            model: "Camaro",
+            brand: "Chevrolet",
+            year: "2021",
+            name: function(){
+                return this.model + " - " + this.brand;
+            }
+        };
+        console.log(car.name());
+
+        var json = JSON.stringify(car);
+        console.log(json);
+
+        var json_text = '{"name": "Fernando", "lastname": "Herrera", "Age": "24", "nacionality": "Mexican"}';
+        console.log(json_text);
+
+        var json_object = JSON.parse(json_text);
+        console.log(json_object);
+
+    </script> -->
+
+    <script>
+        var json_text = 
+        `[
+            {
+                "name": "Fernando",
+                "lastname": "Herrera",
+                "age": 24
+            },
+
+            {
+                "name": "Victor",
+                "lastname": "Salas",
+                "age": 23
+            },
+
+            {
+                "name": "Magdalena",
+                "lastname": "González",
+                "age": 22
+            }
+        ]`;
+
+        console.log(json_text);
+
+        var persons = JSON.parse(json_text);
+        var html = "";
+        for(var i = 0; i < persons.length; i++)
+        {
+            html += 
+            `
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="">
+                <h3>${persons[i].name} ${persons[i].lastname}</h3>
+                <h5>${persons[i].age} años</h5>
+            </div>
+            `;
+        }
+
+        var div = document.getElementById("cards");
+        div.innerHTML = html; 
+        
+    </script>
+
+</body>
+</html>

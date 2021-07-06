@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Lora Italic";
+    src:url(fonts/Lora-Italic-VariableFont_wght.ttf);
+}
+
+#p1{
+    color: red;
+    text-decoration:line-through;
+    text-transform: uppercase;
+    font-family: "Lora";
+}
+
+#p2{
+    text-align: right;
+    text-decoration: overline;
+    text-transform: lowercase;
+}
+
+#p3{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+#p4{
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    text-shadow: 2px 4px rgba(0, 0 ,0, 0.25);
+    color: black;
+}
+
+.serif{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.monospace{
+    font-family: 'Courier New', Courier, monospace;
+}

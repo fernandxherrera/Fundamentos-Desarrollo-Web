@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+    <style>
+        /* Tiene el atributo, no importa el valor */
+        [name]{
+            background-color: cadetblue;
+        }
+
+        /* Atributo con el valor exacto */
+        [for="name"]{
+            text-transform: uppercase;
+        }
+
+        /* Atributo con la PALABRA en el valor */
+        [alt~="Internacional"]{
+            height: 50px;
+        }
+
+        /* Atributo que el valor empiece con la PALABRA */
+        [id|="parrafo"]{
+            border: solid 2px red;
+        }
+
+        /* Atributo que el valor empiece con el caracter */
+        [id^="p"]{
+            font-size: 20px;
+        }
+
+        /* Atributo que el valor termina con el caracter */
+        [name$="e"]{
+            margin-left: 20px;
+        }
+
+        /* Atributo que el valor contiene la cadena*/
+        [for*="name"]{
+            color: sienna;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <p id="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus delectus eum architecto facilis nemo nostrum cumque doloremque recusandae dolorum fugiat sint, non quos error odit unde consequatur iure eaque a.</p>
+
+    <p id="parrafo-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati beatae repellat asperiores? Deserunt quidem similique minima eius? Dolore suscipit facilis rerum earum dolores nesciunt deleniti temporibus, tempora corporis tempore ad!</p>
+
+    <p id="parrafo-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium, ducimus commodi consequuntur, enim tempore mollitia officiis ea magnam architecto, ad asperiores ratione! Sed at exercitationem voluptatibus rerum, beatae quisquam.</p>
+
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" name="name">
+        <br><br>
+
+        <label for="lastname1">Apellido Paterno</label>
+        <input type="text" name="lastname1">
+        <br><br>
+
+        <label for="lastname2">Apellido Materno</label>
+        <input type="text" name="lastname2">
+        <br><br>
+
+        <label for="phone">Teléfono</label>
+        <input type="tel" name="phone">
+        <br><br>
+
+    </form>
+
+    <img src="/images/sonora.jpg" alt="Sonora Internacional" width="600" height="400">
+
+
+</body>
+</html>

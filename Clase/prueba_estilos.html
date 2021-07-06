@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Estilos</title>
+
+    <style>
+        #grande{ 
+            font-size: 20px;
+        }
+
+        .arial{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .blue{
+            color: blue;
+        }
+
+        button.arial{
+            background-color: lightgreen;
+        }
+
+        h1::first-letter, p.arial{
+            font-weight: bold;
+            color: red;
+        }
+
+        button:hover, p:hover{
+            background-color: black;
+            color: white;
+        }
+
+        input:focus{
+            box-shadow: blue 3px 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="color: lightseagreen;">Ejemplo CSS</h1>
+
+    <p id="grande">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ipsum quae. Expedita veritatis animi natus vero similique facilis cumque fugit, temporibus tempora sed aspernatur non ullam consectetur distinctio. Dolorum, molestias.</p>
+
+    <p class="arial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptas nobis. Est nobis magni sit, enim provident ipsum, iste inventore ea vel, fuga qui odit illo ratione dolor sapiente natus?</p>
+
+    <p class="arial blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea reiciendis, voluptas ad laudantium eum cum et ipsam odio. Perferendis ea vel facilis est quas sequi ad eligendi aperiam repudiandae magnam.</p>
+
+    <button class="arial">Presióname</button>
+    <button>Presióname x2</button>
+    <br><br>
+    <input type="text">
+</body>
+</html>
