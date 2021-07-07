@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  html {
+      height: 100vh;
+  }
+  
+  body {
+    margin: 0;
+    height: inherit;
+  }
+  
+  .container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0.25em;
+    height: inherit;
+  }
+  .flex {
+    display: flex;
+    flex-shrink: 0.5em;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-75 {
+    width: 75%;
+  }
+  .text-center {
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+  .m-0 {
+    margin: 0;
+  }
+  .mx-auto {
+    margin: 0 auto;
+  }
+  .p-2 {
+    padding: 0.5em;
+  }
+  
+  .form-group {
+    margin-bottom: 1em;
+  }
+  
+  label {
+    display: inline-block;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    color: dimgray;
+    border-color: #ced4da;
+    line-height: 1.5;
+  }
+  
+  .btn {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 0.6em;
+    transition: 0.3s ease all;
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    color: white;
+    background-color: rgb(7, 151, 55);
+    border: 1px solid rgb(7, 151, 55);
+  }
+  
+  .btn-success:hover {
+    background-color: rgb(4, 110, 39);
+    border: 1px solid rgb(4, 110, 39);
+  }
+  
+  .alert {
+      text-align: center;
+      background-color: rgb(255, 131, 131);
+      color: darkred;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      display: none;
+      transition: 0.3s ease all;
+  }
+  
+  #titulo {
+    background-color: #0288d1;
+    color: white;
+    padding: 0.5em 0;
+  }
+  
+  .container-fluid {
+    background-color: #03a9f4;
+  }
+  
+  form {
+    color: white;
+  }
+  
+  #weather-result {
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1em 0.5em;
+    text-align: center;
+  }
+  
+  
+  @media screen and (max-width: 592px ) {
+      .container {
+          width: 100%;
+      }
+  
+      .flex-sm-column-reverse {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          align-content: flex-start;
+      }
+  
+      .w-sm-100 {
+          width: 100%;
+      }
+  }

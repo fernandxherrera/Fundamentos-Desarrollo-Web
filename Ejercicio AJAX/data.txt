@@ -1,0 +1,20 @@
+[
+    {
+        "country": "México",
+        "code": "MX",
+        "cities": [
+            "Villahermosa",
+            "San Luis Potosí",
+            "Guadalajara"
+        ]
+    },
+        {
+        "country": "Estados Unidos",
+        "code": "US",
+        "cities": [
+            "New York",
+            "Texas",
+            "San Francisco"
+        ]
+    }
+]
